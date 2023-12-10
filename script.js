@@ -37,7 +37,7 @@ async function translateText() {
   const textToTranslate = document.getElementById("inputText").value;
 
   try {
-    const response = await fetch("http://localhost:3000/translate", {
+    const response = await fetch("http://192.168.0.210:3000/translate", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
