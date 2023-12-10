@@ -57,7 +57,7 @@ button:hover {
 }
 
 h2 {
-  color: var(--lavender-web);
+  color: #262626;
   text-align: center;
   background-color: whitesmoke;
   padding: 1em;
@@ -71,8 +71,6 @@ input {
 }
 
 .translations {
-  background-color: var(--lavender-web);
-  color: var(--eerie-black);
   padding: 1em;
   width: 85vw;
   display: flex;
@@ -101,7 +99,7 @@ input {
 .copyNotification {
   display: none;
   margin-top: 5px;
-  color: #45a049;
+  color: var(--wenge);
 }
 
 @media screen and (max-width: 600px) {

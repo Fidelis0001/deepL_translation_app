@@ -23,6 +23,7 @@ function attachEventListeners() {
 
   // Attach the translateText function to the click event of the button
   translateButton.addEventListener("click", translateText);
+  translateButton.addEventListener("touchstart", translateText);
 
   ["DE", "FR", "NL"].forEach((lang) => {
     const copyButton = document.getElementById(`copyButton${lang}`);
