@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-...."
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>3 birds with one stone!</h1>
+    </header>
+    <section id="source-text">
+      <textarea id="inputText" placeholder="Enter text to translate"></textarea>
+      <button id="translate-btn">Translate</button>
+    </section>
+
+    <h2>Translations:</h2>
+    <div class="translations">
+      <div>
+        <h3>German</h3>
+        <input
+          type="text"
+          id="translationDE"
+          readonly
+          class="translated-text"
+        />
+        <button id="copyButtonDE" class="copy-button">
+          <i class="fas fa-copy"></i>
+        </button>
+        <div class="copyNotification" id="copyNotificationDE"></div>
+      </div>
+      <div>
+        <h3>French</h3>
+        <input
+          type="text"
+          id="translationFR"
+          readonly
+          class="translated-text"
+        />
+        <button id="copyButtonFR" class="copy-button">
+          <i class="fas fa-copy"></i>
+        </button>
+        <div class="copyNotification" id="copyNotificationFR"></div>
+      </div>
+      <div>
+        <h3>Dutch</h3>
+        <input
+          type="text"
+          id="translationNL"
+          readonly
+          class="translated-text"
+        />
+        <button id="copyButtonNL" class="copy-button">
+          <i class="fas fa-copy"></i>
+        </button>
+        <div class="copyNotification" id="copyNotificationNL"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
