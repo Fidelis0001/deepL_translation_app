@@ -8,7 +8,7 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(cors());
+app.use(cors({{origin: "https://3-birds-with-one-stone.netlify.app"}}));
 
 const deeplApiKey = process.env.DEEPL_API_KEY;
 
