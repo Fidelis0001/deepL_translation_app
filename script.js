@@ -37,13 +37,16 @@ async function translateText() {
   const textToTranslate = document.getElementById("inputText").value;
 
   try {
-    const response = await fetch("https://localhost:3000/translate", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: `text=${encodeURIComponent(textToTranslate)}`,
-    });
+    const response = await fetch(
+      "https://deepl-translation-app.onrender.com/translate",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: `text=${encodeURIComponent(textToTranslate)}`,
+      }
+    );
 
     console.log("logs out", response);
     const translations = await response.json();
